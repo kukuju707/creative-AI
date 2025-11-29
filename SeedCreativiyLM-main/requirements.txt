@@ -1,0 +1,11 @@
+openai>=1.0.0
+python-dotenv>=1.0.0
+pydantic>=2.0.0
+pandas>=2.3.3
+torch==2.9.0
+transformers==4.57.1
+datasets==4.3.0
+accelerate==1.11.0
+bezier>=2024.6.20
+matplotlib==3.10.7
+hf_transfer==0.1.9

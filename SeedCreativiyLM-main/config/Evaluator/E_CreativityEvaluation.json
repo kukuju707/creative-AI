@@ -1,0 +1,10 @@
+{
+  "model_name" : "gpt-4.1-mini",
+  "dataset_name" : "SAA-Lab/LitBench-Train",
+  "eval_sample_size" : 1000,
+  "max_new_tokens" : 512,
+  "generator_model_override": null,
+  "control_group_model_override": null,
+
+  "_comment_model_name": "평가 모델 옵션: HuggingFace(dmnsh/Qwen3-4b-W0-GenRM) 또는 OpenAI(gpt-4o, gpt-4-turbo 등)"
+}

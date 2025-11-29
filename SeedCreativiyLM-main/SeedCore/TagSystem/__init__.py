@@ -1,0 +1,1 @@
+﻿# The core part of the server. Declares the most basic and fundamental subsystem and classes for the system.

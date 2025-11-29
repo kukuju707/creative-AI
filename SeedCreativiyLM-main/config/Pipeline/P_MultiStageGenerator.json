@@ -1,0 +1,54 @@
+{
+  "seed_generation_pipeline" : {
+    "core_seed_params" : {
+        "num_seeds" : 2,
+        "model_name" : "gpt-4.1-mini",
+        "max_tokens" : 250,
+        "temperature_curve_points" : [
+              [0.0, 1.0, 0.1],
+              [0.2, 0.1, 0.7],
+              [0.5, 0.3, 0.2],
+              [0.6, 0.6, 1.0],
+              [1.0, 0.0, 0.1]
+        ],
+        "temperature_range" : {
+            "min" : 0.6,
+            "max" : 1.45
+        }
+    },
+    "interpolation_seed_params" : {
+        "num_seeds" : 2,
+        "model_name" : "gpt-4.1-mini",
+        "max_tokens" : 200,
+        "temperature" : 0.7
+    },
+    "descendant_seed_params" : {
+        "num_seeds": 2,
+        "model_name": "gpt-4.1-mini",
+        "max_tokens": 250,
+        "temperature": 0.8
+    },
+    "enable_pruning" : true
+  },
+
+  "seed_pruner" : {
+    "b_enabled" : true,
+    "similarity_threshold" : 0.9,
+    "embedding_model_name" : "text-embedding-3-small"
+  },
+
+  "answer_generator" : {
+    "model_name" : "gpt-4.1-mini",
+    "final_stage_recommended_max_tokens_multiplier" : 1,
+    "recommended_max_tokens" : 110,
+    "max_tokens" : 500,
+    "temperature" : 0.7
+  },
+
+  "control_group" : {
+    "model_name" : "gpt-4.1-mini",
+    "temperature" : 0.7,
+    "recommended_max_tokens" : 110,
+    "max_tokens" : 100
+  }
+}
